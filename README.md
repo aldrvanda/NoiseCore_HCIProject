@@ -37,9 +37,3 @@ Website toko perangkat audio (headphone, earbuds, dan speaker) yang dibuat sebag
 3. Jalankan dengan ekstensi **Live Server** dari root folder, lalu buka `HTML/index.html`.
 
 > Link navigasi memakai path absolut (`/HTML/...`), jadi website perlu dijalankan lewat server dari root folder (misalnya Live Server), bukan dengan membuka file HTML langsung di browser.
-
-## Anggota Kelompok
-
-| Nama | NIM |
-| --- | --- |
-| - | - |
