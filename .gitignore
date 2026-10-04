@@ -1,0 +1,14 @@
+# File desain & dokumen (bukan bagian web)
+*.fig
+*.docx
+
+# File sementara Office
+~$*
+
+# File sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/

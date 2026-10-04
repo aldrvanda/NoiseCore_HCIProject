@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noisecore</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bff320c54c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#" class="logo">
+              <img src="../asset/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/HTML/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/deals.html" class="nav-link">Deals</a>
+            </li>
+        </ul>
+        <a href="/HTML/membership.html" class="nav-link account-icon">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </nav>
+
+
+     <!-- Main Content -->
+    <main class="main-content-membership">
+        <form class="membership-form" id="membershipForm">
+            <h1 class="form-title">Membership Form</h1>
+            
+            <div class="form-group">
+                <input type="text" class="form-input" id="name" placeholder="Name" required>
+                <div class="error-message" id="nameError"></div>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" class="form-input" id="email" placeholder="Email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            
+            <div class="form-group">
+                <input type="date" class="form-input" id="dateOfBirth" placeholder="Date of Birth" required>
+                <div class="error-message" id="dobError"></div>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" class="form-input" id="password" placeholder="Password" required>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" class="checkbox-input" id="terms" required>
+                <label for="terms" class="checkbox-label">I agree to the terms and conditions</label>
+            </div>
+            <div class="error-message" id="termsError"></div>
+            
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Register</span>
+                <div class="btn-loading">
+                    <div class="spinner"></div>
+                </div>
+            </button>
+        </form>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Registration Successful!</h2>
+            <p>Welcome to Noisecore! Your membership has been created successfully.</p>
+            <button class="modal-btn" onclick="closeModal()">Continue</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-section">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" class="social-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="copyright">
+                © 2025 Copyright: Noisecore
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

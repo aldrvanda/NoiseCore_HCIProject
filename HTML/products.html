@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bff320c54c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#" class="logo">
+              <img src="../asset/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/HTML/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="/HTML/membership.html" class="nav-link">Deals</a>
+            </li>
+        </ul>
+        <a href="/HTML/membership.html" class="nav-link account-icon">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </nav>
+
+
+      <!-- Filter Buttons -->
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search here.."/>
+            <button id="search">Search</button>
+        </div>
+
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Headphones')">Headphones</button>
+            <button class="button-value" onclick="filterProduct('Earbuds')">Earbuds</button>
+            <button class="button-value" onclick="filterProduct('Speakers')">Speakers</button>
+            <button class="button-value" onclick="filterProduct('Open-ear-earbuds')">Open-Ear Earbuds</button>
+        </div>
+        <div id="products"></div>
+
+        
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-section">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" class="social-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="copyright">
+                © 2025 Copyright: Noisecore
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script -->
+    <script src="../script.js"></script>
+
+</body>
+</html>
